@@ -19,7 +19,7 @@ function convertToAdjList(adjMatrix) {
 }
 
 function convertToAdjMatrix(adjList) {
-    // yeah chatGPT wrote these 2 lines, I knew I needed to set up an length by length filled with 0s but was unsure of syntax
+    // yeah chatGPT wrote these 2 lines, I knew I needed to set up a length by length matrix filled with 0s but was unsure of syntax
     let n = adjList.length
     let adjMatrix = Array.from({ length: n }, () => Array(n).fill(0));
 

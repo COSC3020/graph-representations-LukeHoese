@@ -15,7 +15,15 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+An adjacency matrix for a graph is of size |V| * |V| (with |V| meaning number if vertices). Since the algorithm has an outer loop over all the rows, and an inner loop over each row in each column, this gives us a time complexity of (|V|<sup>2</sup>). Which makes sense because it iterates over every element in the |V| * |V| matrix.
+
+My bonus algorithm works over a list of size |V| * |E| (with |E| meaning number of edges). The outer loop iterates over each row, which corresponds to each vertex, and the inner loop iterates over every element in each column, which corresponds to every edge connected to each vertex (totalling to every edge in the graph). Thus giving a time complexity of (|V| * |E|)
+
 ## Bonus
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+I asked chatGPT for help with how to work with Matrices, mostly just syntax. All code was written by me unless specified.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
